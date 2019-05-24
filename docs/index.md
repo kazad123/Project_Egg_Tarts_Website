@@ -3,7 +3,7 @@ layout: default
 title:  Home
 ---
 
-![Steve](steve.jpg)
+![Steve](Super-Smash-Bros-Minecraft-Steve.jpg.optimal.jpg)
 
 Source code: https://github.com/USER/PROJECT (_fix this_)
 
