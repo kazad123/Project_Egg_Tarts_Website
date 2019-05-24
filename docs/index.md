@@ -15,6 +15,6 @@ title: Home
 [https://github.com/kazad123/Project-Egg-Tarts](https://github.com/kazad123/Project-Egg-Tarts)
 
 ## Relevant Resources:
-1) [https://mingh2.github.io/SurvivalOfTheFittest/](https://mingh2.github.io/SurvivalOfTheFittest/)
+1) [https://mingh2.github.io/SurvivalOfTheFittest/](https://mingh2.github.io/SurvivalOfTheFitest/)
 
 2) [https://ianschweer.github.io/QProtector/](https://ianschweer.github.io/QProtector/)
