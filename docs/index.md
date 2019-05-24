@@ -15,6 +15,10 @@ title: Home
 [https://github.com/kazad123/Project-Egg-Tarts](https://github.com/kazad123/Project-Egg-Tarts)
 
 ## Relevant Resources:
-1) [https://mingh2.github.io/SurvivalOfTheFittest/](https://mingh2.github.io/SurvivalOfTheFitest/)
+1) [https://mingh2.github.io/SurvivalOfTheFittest/](https://mingh2.github.io/SurvivalOfTheFittest/)
 
 2) [https://ianschweer.github.io/QProtector/](https://ianschweer.github.io/QProtector/)
+
+3) [What is NEAT?](http://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf)
+
+4) [Wiki on NEAT](https://en.wikipedia.org/wiki/Neuroevolution_of_augmenting_topologies)
