@@ -1,26 +1,19 @@
 ---
-layout: page
-title: ****Home***
-header-img: "img/home-bg.jpg"
-
+layout: default
+title: Home
 ---
 
+# STEVE JOINS THE BATTLE!
+
+<img src="https://cdn.gamerant.com/wp-content/uploads/Super-Smash-Bros-Minecraft-Steve.jpg.optimal.jpg" width="100%"> 
+(Source: Gamerant)
 
 
-Source code: https://github.com/kazad123/Project-Egg-Tarts
+Steve joins the battle as a fighter in Super Smash Bros. for Minecraft! Just like in the console version of Super Smash Bros., the goal of Steve is to knock his opponents off the stage, and be the last one standing. 
 
-Reports:
+## Source Code Repository:
+https://github.com/kazad123/Project-Egg-Tarts
 
-- [Proposal](proposal.html)
-- [Status](status.html)
-- [Final](final.html)
-
-Summary:
-
-Create a Super Smash Bros. version of Minecraft!
-
-
-
-
-
-[quickref]: https://github.com/mundimark/quickrefs/blob/master/HTML.md
+## Relevant Resources:
+1) https://mingh2.github.io/SurvivalOfTheFittest/
+2) https://ianschweer.github.io/QProtector/
