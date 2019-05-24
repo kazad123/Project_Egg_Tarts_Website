@@ -11,18 +11,9 @@ Reports:
 - [Status](status.html)
 - [Final](final.html)
 
-What's Markdown (`.md`)?
+Summary:
 
-Markdown is markup that lets you write hypertext (HTML) documents
-in easy-to-read and easy-to-write plain text.
-No angle brackets `<></>` required for
-paragraphs, lists, blockquotes, tables, etc.
-
-
-This is a paragraph (in Markdown). Some more
-text here.
-
-This is another paragraph.
+Create a Super Smash Bros. version of Minecraft!
 
 This is a list:
 
