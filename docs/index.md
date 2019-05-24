@@ -16,4 +16,5 @@ https://github.com/kazad123/Project-Egg-Tarts
 
 ## Relevant Resources:
 1) https://mingh2.github.io/SurvivalOfTheFittest/
+
 2) https://ianschweer.github.io/QProtector/
