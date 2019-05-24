@@ -3,9 +3,9 @@ layout: default
 title:  Home
 ---
 
-![Steve](Super-Smash-Bros-Minecraft-Steve.jpg.optimal.jpg)
 
-Source code: https://github.com/USER/PROJECT (_fix this_)
+
+Source code: https://github.com/kazad123/Project-Egg-Tarts
 
 Reports:
 
