@@ -13,13 +13,9 @@ The goal for this status milestone was to have one stationary agent, and one tra
 
 The NEAT algorithm is similar to a neural network with layers of hidden nodes. However, this neural network evolves by finding a balance between the fitness of evolved solutions and their diversity. For every topology, or stage of evolution, there is a a genome which reflects the best set of actions. For every genome, there is an associated fitness value which is determined from a fitness function. **(CHECK THIS FITNESS FUNCTION) This fitness function takes into account the distance between the two fighters, since we want the fighters to have the least amount of distance apart.** The goal of NEAT is to have the best fitness per evolution, and develop the best topology as it is evolving.
 
-This is 
+This is done by creating a large number of genomes, each with their respective actions and rewards, represented by nodes and edges. We then cross the best 2 fitness scores out of all the genomes, to output a new genome for the next generation. This genome is our best solution.
 
-**REFERENCE: ((((A brief overview of the genetic algorithm: First we create a large population of genomes, N. Each represents a different neural net (genes are the nodes and edges of the neural net). We then test each genome (by running our Malmo bot with the neural net created from that genome), assign it a fitness score (score of how well the organism did), and select the two members from that species with the best fitness score. Then we crossover the genomes (randomly picking a position in the chromosome then swapping everything after it) and mutate the resulting genomes to form a new generation.)))) **
-
-We used a NEAT python library together with Malmo to teach our agent. To begin we created a 10 x 10 grid made of diamond blocks. We spawn our two agents at the same location and randomize the yaw between 0 and 360. Our world trains the population, evaluates the genomes, and handles the fighter.
-
-
+We used the NEAT python library together with Malmo to teach our agent. To begin we created an 11 x 11 grid made of diamond blocks which is our stage. We spawn our two agents at the same location for every generation and randomize the yaw between 0 and 360. Our world then starts the training, and evolution begins...
 
 ## Evaluation
 
