@@ -21,6 +21,15 @@ We used the NEAT python library together with Malmo to teach our agent. To begin
 
 ## Remaining Goals and Challenges
 
+In the final project, we hope to completely implement the stage with two agents being trained to knock each other off the stage. Our next goal to have completed by the final submission is to have this working, instead of having one agent be stationary on the stage. We see this is a challenge since the evolutions have to focus on the moving agent's current position at a specific point in time instead of a static position. With further research, experimentation, and meetings, we hope to accomplish this.
+
+The next goal we would like to focus on is changing the environment. By making the environment(stage) slightly more dyanmic. This would add a different aspect to the agent's training and how they evolve. It would be interesting to see if the agent can learn to use the environment to thier advantage in combat.
+
+Lastly, 
+Being an evolutionary algorithm, we are up against the whims of nature and RNG to chance us into better organisms. Unfortunately, this means we must sit through hours of runs of plateaus, where each generation does not seem to be doing much better than the past. Tweaking the rates of mutation should help us ameliorate this problem, and we will attack that in the following week.
+
+
+
 ## Resources Used
 1) [https://mingh2.github.io/SurvivalOfTheFittest/](https://mingh2.github.io/SurvivalOfTheFittest/)
 
