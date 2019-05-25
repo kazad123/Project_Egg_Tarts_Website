@@ -22,3 +22,12 @@ We used the NEAT python library together with Malmo to teach our agent. To begin
 ## Remaining Goals and Challenges
 
 ## Resources Used
+1) [https://mingh2.github.io/SurvivalOfTheFittest/](https://mingh2.github.io/SurvivalOfTheFittest/)
+
+2) [https://ianschweer.github.io/QProtector/](https://ianschweer.github.io/QProtector/)
+
+3) [https://github.com/UCI-CS-175-Cool-Kids-Club/Neat_Fighter](https://github.com/UCI-CS-175-Cool-Kids-Club/Neat_Fighter)
+
+4) [NEAT library](https://github.com/CodeReclaimers/neat-python)
+
+
