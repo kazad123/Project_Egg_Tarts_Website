@@ -25,9 +25,7 @@ In the final project, we hope to completely implement the stage with two agents 
 
 The next goal we would like to focus on is changing the environment. By making the environment(stage) slightly more dyanmic. This would add a different aspect to the agent's training and how they evolve. It would be interesting to see if the agent can learn to use the environment to thier advantage in combat.
 
-Lastly, 
-Being an evolutionary algorithm, we are up against the whims of nature and RNG to chance us into better organisms. Unfortunately, this means we must sit through hours of runs of plateaus, where each generation does not seem to be doing much better than the past. Tweaking the rates of mutation should help us ameliorate this problem, and we will attack that in the following week.
-
+Lastly, due to our method being based on evolution, there is RNG which may cause long hours of training. We hope by adjusting the population of genomes, and possibly other factors, this could cut our training time down. Regardless, we still need to wait hours for training to be complete.
 
 
 ## Resources Used
@@ -38,5 +36,7 @@ Being an evolutionary algorithm, we are up against the whims of nature and RNG t
 3) [https://github.com/UCI-CS-175-Cool-Kids-Club/Neat_Fighter](https://github.com/UCI-CS-175-Cool-Kids-Club/Neat_Fighter)
 
 4) [NEAT library](https://github.com/CodeReclaimers/neat-python)
+
+5) [XML Documentation](http://microsoft.github.io/malmo/0.16.0/Schemas/MissionHandlers.html)
 
 
