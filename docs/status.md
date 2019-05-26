@@ -29,7 +29,7 @@ The fitness function that we created takes a few different parameters into consi
 
 Over the course of training, our agent seems to improve quite quickly. Initially, we see the training agent engaging in random input where it would either walk around in circles or sometimes just spin standing still. Over the course of training, we see that each parameter that we have in our fitness function is being enforced. 
 
-### gif of training agent standing still and attacking
+<iframe src="https://giphy.com/embed/SiGI6NsaJzvLMI05be" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/SiGI6NsaJzvLMI05be">via GIPHY</a></p>
 
 To begin with, an important step in the right direction is the placement of the training agent as the mission progresses. Initially, we see that our training agent does not attempt to move towards the stationary agent but instead walks straight off the edge. We want to prevent this with punishing the agent with a grand negative score like mentioned earlier. Another aspect of placement is how the training agent places itself with regard to the stationary agent. This is where our distance parameter in the fitness function comes into play. By punishing the training agent for staying still, we encourage it to start moving around and especially towards the stationary agent. As you can see below, after a few genomes the agent does not jump off anymore and makes progress in actually attacking the stationary agent. 
 
