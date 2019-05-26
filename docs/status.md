@@ -5,17 +5,29 @@ title: Status
 
 ## Project Summary
 
-Our version of Super Smash Bros. in Minecraft utilizes our knowledge to create a multi-agent combat system. The overall goal for the whole project is to now have two agents successfully fight to try and knock the other off the stage to win. We have been experimenting with different methods(Q-learning and NEAT), and hope to decide on one method soon to complete the project with that chosen method. With NEAT (Neuroevolution of Augmenting Topologies), we hope that our agent can successfully evolve to learn to knock the opponent off the stage successfully.  With Q-learning, we can store a table of possible actions and they're assoicated rewards...***(NOTE: finish if decide to keep here)***
+Our project goal is to implement Super Smash Bros. in Minecraft where two agents attempt to knock each other off a platform. After some research we found an evolutionary algorithm known as NeuroEvolution of Augmenting Topologies, or NEAT for short, that creates artificial neural networks comprised of a population of individual genomes. NEAT involves many biological principles such as speciation and using a fitness function to integrate the concept of “Survival of the fittest”. With the fitness function that we created, we can compute a single number given multiple parameters that depicts the quality of genome. 
 
-The goal for this status milestone was to have one stationary agent, and one trained agent. This trained agent is supposed to move to the enemy, and attack to knock the enemy off. Our environment is flat stage of 11 x 11 diamond blocks above a world of lava. If we still have time, once our project is complete, we intend to make the environment more complex. Lastly, we hope to improve the agent training of whatever method we decide on.
+NEAT will progress through multiple generations by taking the best performing genomes of each generation and reproducing them to create the most fit individuals that will be used for the next generation. Reproduction operations includes adding nodes or connections between genomes which means that as NEAT progresses, the genome network will become quite complex. NEAT will terminate when the provided fitness function criterion is reached.
 
 ## Approach
 
-The NEAT algorithm is similar to a neural network with layers of hidden nodes. However, this neural network evolves by finding a balance between the fitness of evolved solutions and their diversity. For every topology, or stage of evolution, there is a a genome which reflects the best set of actions. For every genome, there is an associated fitness value which is determined from a fitness function. **(CHECK THIS FITNESS FUNCTION) This fitness function takes into account the distance between the two fighters, since we want the fighters to have the least amount of distance apart.** The goal of NEAT is to have the best fitness per evolution, and develop the best topology as it is evolving.
+Our approach to implementing Super Smash Bros. in Minecraft involves NEAT to teach the agent how to knock off the other agent in our preset battlefield. 
 
-This is done by creating a large number of genomes, each with their respective actions and rewards, represented by nodes and edges. We then cross the best 2 fitness scores out of all the genomes, to output a new genome for the next generation. This genome is our best solution.
+Currently the battlefield has a size of 10x5 diamond blocks and lies above a sea full of lava. Our goal for the status was to have one stationary agent and one trained agent that would attempt to knock off the stationary agent. We first attempted to have a battlefield of 11x11 blocks but we figured out that this creates a large initial barrier for improvement because there is too much distance between the two agents. 
 
-We used the NEAT python library together with Malmo to teach our agent. To begin we created an 11 x 11 grid made of diamond blocks which is our stage. We spawn our two agents at the same location for every generation and randomize the yaw between 0 and 360. Our world then starts the training, and evolution begins...
+The weapon that we chose for the agents to use is a wooden hoe because this does the least amount of damage while still knocking back the other agent because we wish to not kill the other agent during the process. 
+
+The inputs of the agent include … (add later or delete)
+
+The fitness function that we created takes a few different parameters into consideration:
+
+- First of all, we want the other agent to be knocked off so by the end of a mission, if the other player is knocked off the platform then a large sum of points is awarded. Since the area under the platform is a sea full of lava, it is evident when the other agent is knocked off. 
+
+- Another parameter that we take into consideration is the angle between the two agents. During the early phrase of training we noticed that most of the time the training agent would be jumping around in circles and not moving towards the stationary agent. We decided to train the agent by enforcing a continuous angle constraint where the agent was awarded more points if the training agent was facing the stationary agent.
+
+- Distance is taken into account to encourage the training agent to end up closer to the stationary agent. 
+
+- Time is of the essence and an agent that knocks off the opponent in a shorter amount of time is a better fit agent than one who does so in a longer amount of time. We decided to create a scale that would deduct more points the longer an agent takes to complete a mission.
 
 ## Evaluation
 
@@ -23,9 +35,9 @@ We used the NEAT python library together with Malmo to teach our agent. To begin
 
 In the final project, we hope to completely implement the stage with two agents being trained to knock each other off the stage. Our next goal to have completed by the final submission is to have this working, instead of having one agent be stationary on the stage. We see this is a challenge since the evolutions have to focus on the moving agent's current position at a specific point in time instead of a static position. With further research, experimentation, and meetings, we hope to accomplish this.
 
-The next goal we would like to focus on is changing the environment. By making the environment(stage) slightly more dyanmic. This would add a different aspect to the agent's training and how they evolve. It would be interesting to see if the agent can learn to use the environment to thier advantage in combat.
+The next goal we would like to focus on is changing the environment. First, by expanding the stage from 10 x 5 to something larger and/or by making the environment(stage) slightly more dyanmic. This would add a different aspect to the agent's training and how they evolve. It would be interesting to see if the agent can learn to use the environment to their advantage in combat.
 
-Lastly, due to our method being based on evolution, there is RNG which may cause long hours of training. We hope by adjusting the population of genomes, and possibly other factors, this could cut our training time down. Regardless, we still need to wait hours for training to be complete.
+Lastly, due to our method being based on evolution, there is RNG which may cause long hours of training. We hope by adjusting the population of genomes, and possibly other factors, this could cut our training time down. Regardless, we still need to wait hours for training to be complete. From the evolutions and their respective genomes, we also hope to get working a graph visualization of the evolution progress. This graph would show each genome and their fitness score, which would make it easier to visualize each genome and its evolution progress.
 
 
 ## Resources Used
