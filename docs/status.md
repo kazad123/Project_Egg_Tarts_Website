@@ -29,15 +29,15 @@ The fitness function that we created takes a few different parameters into consi
 
 Over the course of training, our agent seems to improve quite quickly. Initially, we see the training agent engaging in random input where it would either walk around in circles or sometimes just spin standing still. Over the course of training, we see that each parameter that we have in our fitness function is being enforced. 
 
-<iframe src="https://giphy.com/embed/SiGI6NsaJzvLMI05be" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/SiGI6NsaJzvLMI05be">via GIPHY</a></p>
+![](falling.gif)
 
 To begin with, an important step in the right direction is the placement of the training agent as the mission progresses. Initially, we see that our training agent does not attempt to move towards the stationary agent but instead walks straight off the edge. We want to prevent this with punishing the agent with a grand negative score like mentioned earlier. Another aspect of placement is how the training agent places itself with regard to the stationary agent. This is where our distance parameter in the fitness function comes into play. By punishing the training agent for staying still, we encourage it to start moving around and especially towards the stationary agent. As you can see below, after a few genomes the agent does not jump off anymore and makes progress in actually attacking the stationary agent. 
 
-### gif of training agent walking towards the stationary agent, not walking off 
+![](spinning.gif)
 
 We made another step in the right direction by administering an angle parameter. Throughout the early stages of training, the agent stands still and turns in one direction while continuously attacking. In order to prevent this random-like behavior, the average angle was taken into consideration in our fitness function. Although this is only an average and not the actual angle at each tick, it is a step into the right direction and the training agent still manages to reduce the spinning behavior. 
 
-### gif of training agent walking around the stationary agent and facing it (showing that our angle parameter is somewhat working)
+![](hitting.gif)
 
 
 ## Remaining Goals and Challenges
