@@ -3,6 +3,8 @@ layout: default
 title: Status
 ---
 
+## Video Summary
+
 ## Project Summary
 
 Our project goal is to implement Super Smash Bros. in Minecraft where two agents attempt to knock each other off a platform. After some research, we found an evolutionary algorithm known as NeuroEvolution of Augmenting Topologies, or NEAT for short, that creates artificial neural networks comprised of a population of individual genomes. NEAT involves many biological principles such as speciation and using a fitness function to integrate the concept of “Survival of the fittest”. With the fitness function that we created, we can compute a single number given multiple parameters that depict the quality of the genome.
@@ -17,16 +19,14 @@ Currently, the battlefield has a size of 10x5 diamond blocks and lies above a se
 
 The weapon that we chose for the agents to use is a wooden sword because this does the least amount of damage while still knocking back the other agent. This allows the training agent to sufficiently knock back the stationary agent without not killing it. 
 
-Fitness = ### enter fitness function here, make sure angle and distance 
+Fitness = (self.damage_dealt * damage_scale) - (self.ent_distance * dist_scale) - (self.angle * angle_scale) + 
+(travel_scale * self.dist_travelled) - base
 
 The fitness function that we created takes a few different parameters into consideration. 
 - First of all, we want the other agent to be knocked off so by the end of a mission, if the other player is knocked off the platform then a large sum of points is awarded. Since the area under the platform is a sea full of lava, it is evident when the other agent is knocked off. 
 - Another parameter that we take into consideration is the angle between the two agents. During the early phase of training, we noticed that most of the time the training agent would be jumping around in circles and not moving towards the stationary agent. We decided to train the agent by enforcing a continuous angle constraint where the agent was awarded more points if the training agent was facing the stationary agent.
 - Distance is taken into account to encourage the training agent to end up closer to the stationary agent. Again, we noticed early on that the agent wasn’t attempting to get closer to the other agent so we placed a distance constraint and punished the training agent for being further away from the stationary agent.
 - Time is of the essence and an agent that knocks off the opponent in a shorter amount of time is a better fit agent than one who does so in a longer amount of time. We decided to create a scale that would deduct more points the longer an agent takes to complete a mission.
-
-## Video Summary
-
 
 ## Evaluation
 
