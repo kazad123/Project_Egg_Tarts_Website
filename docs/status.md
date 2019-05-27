@@ -5,6 +5,8 @@ title: Status
 
 ## Video Summary
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KiD56P1hDr0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Project Summary
 
 Our project goal is to implement Super Smash Bros. in Minecraft where two agents attempt to knock each other off a platform. After some research, we found an evolutionary algorithm known as NeuroEvolution of Augmenting Topologies, or NEAT for short, that creates artificial neural networks comprised of a population of individual genomes. NEAT involves many biological principles such as speciation and using a fitness function to integrate the concept of “Survival of the fittest”. With the fitness function that we created, we can compute a single number given multiple parameters that depict the quality of the genome.
