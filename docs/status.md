@@ -36,11 +36,11 @@ Over the course of training, our agent seems to improve quite quickly. Initially
 
 To begin with, an important step in the right direction is the placement of the training agent as the mission progresses. Initially, we see that our training agent does not attempt to move towards the stationary agent but instead walks straight off the edge. We want to prevent this with punishing the agent with a grand negative score like mentioned earlier. Another aspect of placement is how the training agent places itself with regard to the stationary agent. This is where our distance parameter in the fitness function comes into play. By punishing the training agent for staying still, we encourage it to start moving around and especially towards the stationary agent. As you can see below, after a few genomes the agent does not jump off anymore and makes progress in actually attacking the stationary agent. 
 
-<iframe src="https://giphy.com/embed/WQIG53ROKX8vdv0SQ2" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/WQIG53ROKX8vdv0SQ2">via GIPHY</a></p>
+<iframe src="https://giphy.com/embed/lQC3mRR4pGwUj1CEQA" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/lQC3mRR4pGwUj1CEQA">via GIPHY</a></p>
 
 We made another step in the right direction by administering an angle parameter. Throughout the early stages of training, the agent stands still and turns in one direction while continuously attacking. In order to prevent this random-like behavior, the average angle was taken into consideration in our fitness function. Although this is only an average and not the actual angle at each tick, it is a step into the right direction and the training agent still manages to reduce the spinning behavior. 
 
-<iframe src="https://giphy.com/embed/lQC3mRR4pGwUj1CEQA" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/lQC3mRR4pGwUj1CEQA">via GIPHY</a></p>
+<iframe src="https://giphy.com/embed/WQIG53ROKX8vdv0SQ2" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/WQIG53ROKX8vdv0SQ2">via GIPHY</a></p>
 
 
 ## Remaining Goals and Challenges
