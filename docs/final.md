@@ -13,7 +13,9 @@ NEAT will progress through multiple generations by taking the best performing ge
 We decided to use NEAT as our method since we had to use a reinforcement learning algorithm. We though NEAT was the best given our problem of agent comabt, and using an evolutionary algorithm would help the agent learn the best set of moves. By using a fitness function using NEAT, we can give a quantitative number to each set of solutions per each genome of the agent. The genome with the best result per agent gives us the best set of actions for that agent to do. With each agent's goal to win by knocking their opponent off the stage.
 
 ## Approaches
-After we set up NEAT, created the functions, and set up the stage, we then used an initial version of a possible fitness function. This was the initial fitness function:
+After we set up NEAT, created the functions, and set up the stage, we then used an initial version of a possible fitness function. 
+
+This was the initial fitness function: ```hello world test```
 
 and here is a gif of that result:
 
@@ -28,8 +30,9 @@ and a gif of the result:
 We decided to change our fitness function, since our original function was not training the agent well. The agent was able to spin in circles originally, and over the evolution time, the agent figured out that these set of actions was the best, when in fact, they weren't. We changed the fitness function to help determine a better or worse reward for the angle parameter. In our first iteration of the fitness function, our angle parameter represented the angle between the agent and the enemy at the end of the mission. We then realized this would not work, so we changed the angle parameter to represent the average of angles per every second of the mission. This did not work either as our agent was not successfully attacking the enemy. This recent iteration shown above, gives good reward if the angle is within 15 degrees of the enemy. Otherwise, the reward is the angle difference squared and then mulitplied by -1. This fights against the agent's previous action of continuous spinning by giving them a very big negative reward. We had to keep changing our fitness function to produce the best and most efficient set of actions for the agent. Making the changes above to our fitness function has made our training more accurate.
 
 
-
 ## Evaluation
+
+For our quantiative evaluation, our fitness function returns a numerical number to measure the genome of our evolution training. 
 
 ## References
 
