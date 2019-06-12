@@ -32,3 +32,19 @@ We decided to change our fitness function, since our original function was not t
 ## Evaluation
 
 ## References
+
+1) [https://mingh2.github.io/SurvivalOfTheFittest/](https://mingh2.github.io/SurvivalOfTheFittest/)
+
+2) [https://ianschweer.github.io/QProtector/](https://ianschweer.github.io/QProtector/)
+
+3) [https://github.com/UCI-CS-175-Cool-Kids-Club/Neat_Fighter](https://github.com/UCI-CS-175-Cool-Kids-Club/Neat_Fighter)
+
+4) [NEAT library](https://github.com/CodeReclaimers/neat-python)
+
+5) [XML Documentation](http://microsoft.github.io/malmo/0.16.0/Schemas/MissionHandlers.html)
+
+6) [NEAT Documentation](https://neat-python.readthedocs.io/en/latest/)
+
+7) [More NEAT Documentation](https://neat-python.readthedocs.io/en/latest/activation.html)
+
+8) [Even More NEAT Documentation](https://neat-python.readthedocs.io/en/latest/xor_example.html)
