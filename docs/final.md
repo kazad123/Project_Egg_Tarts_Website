@@ -16,12 +16,11 @@ NEAT will progress through multiple generations by taking the best performing ge
 After we set up NEAT, created the functions, and set up the stage, we then used an initial version of a possible fitness function. 
 
 This was the initial fitness function: 
+
 ----
 if self.angle > 180: 
       self.angle = 360 - self.angle
-fitness = (self.damage_dealt * damage_scale) - (self.ent_distance * dist_scale) - 
-(self.angle * angle_scale) + (travel_scale * self.dist_travelled) - base
- ----
+fitness = (self.damage_dealt * damage_scale) - (self.ent_distance * dist_scale) - (self.angle * angle_scale) + (travel_scale * self.dist_travelled) - base----
  
 <iframe src="https://giphy.com/embed/WQIG53ROKX8vdv0SQ2" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
