@@ -17,13 +17,11 @@ After we set up NEAT, created the functions, and set up the stage, we then used 
 
 This was the initial fitness function: 
 
-----
-if self.angle > 180:
-            self.angle = 360 - self.angle
-fitness = (self.damage_dealt * damage_scale) - (self.ent_distance * dist_scale) -
-           (self.angle * angle_scale) + (travel_scale * self.dist_travelled) - base
-----
-
+   if self.angle > 180:
+               self.angle = 360 - self.angle
+   fitness = (self.damage_dealt * damage_scale) - (self.ent_distance * dist_scale) -
+              (self.angle * angle_scale) + (travel_scale * self.dist_travelled) - base
+           
 <iframe src="https://giphy.com/embed/WQIG53ROKX8vdv0SQ2" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
 We used this initial fitness function only for one agent on our Super Smash Bros. stage. In order for our agent to properly train, we inputted actions and used the fitness function for one agent, while the second agent would just stand in one place. The advantage of this was that we were able to experiment with NEAT and the Minecraft world to see if the agent could do some set of actions at a minimum. We were also able to see what the result of our fitness function was, in the early stages of our project. The only disadvantage was that our fitness function was wrong, and we clearly had to make changes to our function to make progress in the agent training. Our approach to implementing Super Smash Bros. in Minecraft involves NEAT to teach the agent how to knock off the other agent in our preset battlefield. 
