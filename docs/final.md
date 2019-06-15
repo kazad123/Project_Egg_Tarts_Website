@@ -3,7 +3,7 @@ layout: default
 title: Final Report
 ---
 
-## Video here
+## Video Summary
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wHBShe0ETNE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Project Summary
@@ -88,5 +88,5 @@ Lastly, after adding in the 6 other sensors the agent started making improvement
 8) [Even More NEAT Documentation](https://neat-python.readthedocs.io/en/latest/xor_example.html)
 
 ## Github Link
-(https://github.com/kazad123/Project-Egg-Tarts)
+[Github](https://github.com/kazad123/Project-Egg-Tarts)
 
